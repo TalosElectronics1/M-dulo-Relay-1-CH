@@ -1,0 +1,18 @@
+/*
+Talos Electronics
+ Rafael Lozano Rolón 
+ 7/Octubre/2015 
+ */
+int Rele=2; //Definir pin 2 para la conexion del rele
+void setup()
+{
+  pinMode(Rele,OUTPUT);//Definir el pin 2 como salida
+  digitalWrite(Rele,HIGH);//Condicion para que inicie apagado el foco
+}
+void loop()
+{
+  digitalWrite(Rele,LOW);//Encender el Foco 
+  delay(1000);//Esperar 1 segundo
+  digitalWrite(Rele,HIGH);//Apagar el Foco 
+  delay(1000);//Esperar 1 segundo
+}
